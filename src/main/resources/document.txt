@@ -1,0 +1,27 @@
+ADVOCATE  DIARY MANAGEMENT
+An Advocate Diary Management
+ Android mobile application can be designed to help lawyers or advocates manage their case files, appointments, and other legal activities. Here are some of the features that such an application might include: 
+ 1. Case Management: The application could provide a platform for lawyers to manage their case files, including case documents, notes, deadlines, and client information. 
+ 2. Appointment Management: The application could allow lawyers to manage their appointments and meetings, set reminders, and send notifications to clients.
+ 3.Time Tracking: The application could help lawyers track their time spent on various activities, such as client meetings, research, and court appearances.
+ 4. Billing and Invoicing: The application could help lawyers manage their billing and invoicing, including generating invoices, tracking payments, and sending reminders to clients. 
+ 5. Legal Research: The application could include legal research tools and resources, such as access to legal databases and research materials.
+  6. Communication: The application could provide a communication platform for lawyers to connect with clients, other lawyers, and legal professionals
+
+  STUFF  TO INSERT TO DATABASE
+     supreme court
+     kadhi court
+     high court
+     court of appeal
+     supreme  court
+     small claims
+     ELC
+     ELRC
+     magistrate
+
+
+
+
+
+
+
