@@ -7,13 +7,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "courts")
+@Table(name = "billing_detail")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Court {
-    private long id;
-    private String name;
-    private String location;
-    private CourtType category;
+public class BillingDetail {
+    private String  accountName;
+    private String payBill;
+
 }

@@ -6,20 +6,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-
 @Entity
-@Table(name = "invoices")
+@Table(name = "competencies")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Invoice {
+public class Competency {
     private long id;
-    private String invoiceId;
-    private BigDecimal  amount;
+    private String name;
     private String description;
-    private String nameOfClient;
-    private LocalDate dateOfIssue;
-    private String sentBy;
+    private String yearOfPractice;
 }

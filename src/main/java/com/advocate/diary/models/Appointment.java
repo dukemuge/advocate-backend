@@ -7,10 +7,19 @@ import java.math.BigDecimal;
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.time.LocalDate;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDateTime;
 
+@Entity
+@Table(name = "appointments")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Appointment {
     private @Id @GeneratedValue Long id;
     private Timestamp createdAt = new Timestamp(System.currentTimeMillis());
@@ -27,7 +36,7 @@ public class Appointment {
 //    @Column(name = "start")
 //    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
 //    private LocalDateTime start;
-//
+//    @UpdateTimestamp
 //    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
 //    @Column(name = "end")
 //    private LocalDateTime end;

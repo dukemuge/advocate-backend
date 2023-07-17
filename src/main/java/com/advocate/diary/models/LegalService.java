@@ -7,19 +7,17 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 
 @Entity
-@Table(name = "invoices")
+@Table(name = "legal_services")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Invoice {
+public class LegalService {
     private long id;
-    private String invoiceId;
-    private BigDecimal  amount;
+    private String title;
     private String description;
-    private String nameOfClient;
-    private LocalDate dateOfIssue;
-    private String sentBy;
+    private String category;
+    private BigDecimal price;
+
 }
