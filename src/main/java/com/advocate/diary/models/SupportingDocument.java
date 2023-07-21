@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "posts")
+@Table(name = "supporting_document")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -16,5 +16,6 @@ public class SupportingDocument {
     private String filename;
     private String fileLocation;
     private String  description;
+    private Case caseName;
 
 }

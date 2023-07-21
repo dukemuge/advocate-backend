@@ -1,7 +1,6 @@
 package com.advocate.diary.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,13 +13,30 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class Client {
-    private String  id;
+    @Id
+    @Column(name = "client_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long  id;
+
+    @Column(name = "mobile_no")
     private  String mobileNo;
-    private String name;
+
+    @Column(name = "full_name")
+    private String fullName;
+
+    @Column(name = "postal_code")
     private  String postalCode;
+
+    @Column(name = "occupation")
     private String occupation;
+
+    @Column(name = "national_id")
     private String nationalId;
+
+    @Column(name = "email")
     private  String email;
+
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "client")
     private List<Case> cases;
 
 

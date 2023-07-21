@@ -21,12 +21,15 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 public class Appointment {
-    private @Id @GeneratedValue Long id;
+    @Id
+    @GeneratedValue
+    private Long id;
     private Timestamp createdAt = new Timestamp(System.currentTimeMillis());
     private LocalDate appointmentDate;
     private Time appointmentStartTime;
     private Time appointmentEndTime;
-    private String nameOfDoctor;
+    private String lawyerName;
+    private  String  nameOfClient;
     private AppointmentStatus status = AppointmentStatus.BOOKED;
 
     private BigDecimal price;

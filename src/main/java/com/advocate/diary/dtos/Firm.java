@@ -1,7 +1,7 @@
-package com.advocate.diary.models;
+package com.advocate.diary.dtos;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import com.advocate.diary.models.Lawyer;
+import com.advocate.diary.models.LegalService;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -9,12 +9,10 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Entity
-@Table(name = "law_firm")
+@NoArgsConstructor
 @Getter
 @Setter
-@NoArgsConstructor
-public class LawFirm {
+public class Firm {
     private long id;
     private String name;
     private String logo;
@@ -25,7 +23,6 @@ public class LawFirm {
     private String  contactNo;
     private String county;
     private List<LegalService> legalServices;
-    private List<Employee>  employees;
+    private List<Lawyer>  lawyers;
     private LocalDate dateOfIncorporation;
-
 }

@@ -16,6 +16,7 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 public class PaymentTransaction {
+
     private  long id;
     private BigDecimal  amount;
     private LocalDate paymentDate;

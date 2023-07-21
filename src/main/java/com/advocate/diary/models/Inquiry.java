@@ -1,7 +1,6 @@
 package com.advocate.diary.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -15,6 +14,9 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 public class Inquiry {
+    @Id
+    @Column(name = "inquiry_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String message;
     private LocalDateTime localDateTime;
